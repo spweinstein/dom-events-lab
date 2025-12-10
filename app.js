@@ -44,11 +44,10 @@ function handleNumberInput(input) {
 }
 
 function handleOperationInput(input) {
-  // If we're already doing an operation, compute it, change to new operation and clear display
+  // If we're already doing an operation, change to new operation and clear display
   // Otherwise, set operation to the input and clear the display
   if (operation !== null) {
     console.log(`Changing operation ${operation} to ${input}`);
-    handleCompute();
     updateDisplay("0");
     operation = input;
   } else {
