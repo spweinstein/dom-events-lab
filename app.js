@@ -26,7 +26,7 @@ function updateDisplay(val) {
   display.textContent = val;
 }
 
-function clearInput() {
+function handleClearInput() {
   // console.log("Clearing display");
   updateDisplay("0");
   total = 0;
@@ -93,7 +93,7 @@ buttons.forEach((button) => {
     } else if (input === "=") {
       handleEqualsInput();
     } else if (input === "C") {
-      clearInput();
+      handleClearInput();
     }
     console.log(`Total is ${total}. Display holds ${display.textContent}.`);
   });
