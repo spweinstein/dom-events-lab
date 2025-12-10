@@ -98,4 +98,4 @@ buttons.forEach((button) => {
   });
 });
 
-clearInput();
+handleClearInput();
